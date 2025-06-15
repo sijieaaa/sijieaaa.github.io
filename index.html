@@ -21,8 +21,11 @@ body { font-family: sans-serif; max-width: 900px; margin: 2em auto; }
   color: white;
 }
 .publication {
-  /* border-bottom: 1px solid #ddd; */
-  padding: 1em 0;
+  padding: 1.2em 0;
+  border-bottom: 0.5px solid #dddbdb;
+}
+.publication:last-of-type {
+  border-bottom: none;
 }
 .tag { display: none; }
 .profile-image {
@@ -113,6 +116,8 @@ hr {
 
 
 <h2>Selected Works</h2>
+#The full list can be found on <a href="https://scholar.google.com/citations?user=IUfQMOYAAAAJ&hl=en">Google Scholar</a> page.
+
 <div class="filters">
   <span class="filter-btn active" data-filter="all">Selected</span>
   <span class="filter-btn" data-filter="llm">LLM</span>
@@ -278,7 +283,11 @@ hr {
 
 </div>
 
+<hr>
 
+<h2>Services</h2>
+Conference Reviewer: NeurIPS, ICLR, CVPR, ICCV <br>
+Journal Reviewer: OJVT, TIV, Pattern Recognition, TGRS, RAL, IOTJ
 
 
 <script>
