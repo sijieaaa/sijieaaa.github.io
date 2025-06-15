@@ -1,46 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sijieaaa</title>
-    <style>
-        body {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        hr {
-            border: 1px solid #ccc;
-            margin: 20px 0;
-        }
-        .link-spacing {
-            margin-right: 20px; /* Adjust this value to increase/decrease spacing */
-        }
-        .profile-image {
-            width: 150px; /* Adjust the width as needed */
-            height: auto;
-            margin-right: 20px; /* Add some space between the image and text */
-        }
-        .publication {
-            margin-bottom: 20px;
-            /* font-size: 14px;  */
-            line-height: 1.3; /* Adjust the line spacing as needed */
-        }
-    </style>
+<meta charset="UTF-8">
+<title>Sijie Wang's Publications</title>
+<style>
+body { font-family: sans-serif; max-width: 900px; margin: 2em auto; }
+.filters { margin-bottom: 1em; }
+.filter-btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin: 4px;
+  border: 1px solid #c00;
+  border-radius: 6px;
+  color: #c00;
+  background: #fff;
+  cursor: pointer;
+}
+.filter-btn.active {
+  background-color: #c00;
+  color: white;
+}
+.publication {
+  /* border-bottom: 1px solid #ddd; */
+  padding: 1em 0;
+}
+.tag { display: none; }
+.profile-image {
+    width: 150px; /* Adjust the width as needed */
+    height: auto;
+    margin-right: 20px; /* Add some space between the image and text */
+}
+hr {
+  margin-top: 1em;  /* 控制横线与上方内容的距离 */
+  margin-bottom: 1em;  /* 可选：控制与下方内容的间距 */
+}
+.flex-row {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+</style>
 </head>
 <body>
 
-<!-- Profile image added here -->
-<img src="https://github.com/sijieaaa/sijieaaa.github.io/raw/main/assets/black.jpg" alt="Sijie WANG" class="profile-image">
-<!-- <p style="font-size:10px" >
-    The photo is <a href="https://www.nio.com/blog/nomi-worlds-first-vehicle-artificial-intelligence">NOMI</a>, an AI assistant in NIO vehicles, specially wearing Middle Eastern clothing. 
-</p> -->
-<!-- LikeBtn.com BEGIN -->
-<!-- <span class="likebtn-wrapper" data-theme="custom" data-btn_size="20" data-f_size="10" data-icon_size="10" data-identifier="item_1" data-voting_frequency="600000"></span> -->
-<!-- <script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script> -->
-<!-- LikeBtn.com END -->
 
+
+
+<img src="https://github.com/sijieaaa/sijieaaa.github.io/raw/main/assets/black.jpg" alt="Sijie WANG" class="profile-image">
 </br>
     
 <div class="intro">
@@ -56,11 +62,14 @@
 
 
 
+
+
 <style>
 .limited-lines {
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 10; /* 设置显示前10行 */
+  -webkit-line-clamp: 7; /* Chrome, Safari */
+  line-clamp: 7; /* Standard (currently not widely supported) */
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -85,97 +94,220 @@
 <hr>
 
 
+
 <h2>Selected Projects</h2>
-<ul>
-    <li class="publication">
+<div id="publications">
+  <div >
+    <div style="display: flex; gap: 16px; align-items: flex-start;">
+      <img src="./assets/demo_opencoderunner.png" alt="Demo image" style="width: 200px; height: auto; border-radius: 8px;">
+      <div>
         <a href="https://github.com/sijieaaa/OpenCodeRunner">OpenCodeRunner: Safely and Remotely Running Multi-Language Multi-File Code</a> <br>
         <em> Open-Source Project </em> <br>
         <strong>Sijie Wang</strong> <br>
-    </li>
-</ul>
-    
-<h2>Selected Works</h2>
-<ul>
-    <li class="publication">
-        <a href="https://arxiv.org/pdf/2505.12236">Bridging Generative and Discriminative Learning: Few-Shot Relation Extraction via Two-Stage Knowledge-Guided Pre-training </a> <br>
-        Quanjiang Guo, Jinchuan Zhang, <strong>Sijie Wang</strong>, Ling Tian, Zhao Kang, Bin Yan, Weidong Xiao <br>
-        <em>IJCAI, 2025 </em> <br>
-    </li>
-    <li class="publication">
-        <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Wang_Multi-Modal_Aerial-Ground_Cross-View_Place_Recognition_with_Neural_ODEs_CVPR_2025_paper.pdf">Multi-Modal Aerial-Ground Cross-View Place Recognition with Neural ODEs </a> <br>
-        <em>CVPR, 2025 </em> <br>
-        <strong>Sijie Wang</strong>, Rui She, Qiyu Kang, Siqi Li, Disheng Li, Tianyu Geng, Shangshu Yu, Wee Peng Tay <br>
-    </li>
-    <li class="publication">
-        <a href="https://ojs.aaai.org/index.php/AAAI/article/view/33045">STGC-NeRF: Spatial-Temporal Geometric Consistency for LiDAR Neural Radiance Fields in Dynamic Scenes </a> <br>
-        <em>AAAI Conference on Artificial Intelligence (AAAI), 2025</em> <br>
-        Shangshu Yu, Xiaotian Sun, Wen Li, Qingshan Xu, Zhimin Yuan, <strong>Sijie Wang</strong>, Rui She, Cheng Wang <br>
-    </li>
-    <li class="publication">
-        <a href="https://arxiv.org/pdf/2412.02228">BANER: Boundary-Aware LLMs for Few-Shot Named Entity Recognition </a> <br>
-        <em>International Conference on Computational Linguistics (COLING), 2025</em> <br>
-        Quanjiang Guo, Yihong Dong, Ling Tian, Zhao Kang, Yu Zhang, <strong>Sijie Wang</strong> <br>
-    </li>
-    <li class="publication">
-        <a href="https://arxiv.org/pdf/2410.04939">PRFusion: Toward Effective and Robust Multi-Modal Place Recognition With Image and Point Cloud Fusion </a> <br>
-        <em>IEEE Transactions on Intelligent Transportation Systems (TITS), 2024</em> <br>
-        <strong>Sijie Wang</strong>, Qiyu Kang, Rui She, Kai Zhao, Yang Song, Wee Peng Tay <br>
-    </li>
-    <li class="publication">
-        <a href="http://arxiv.org/abs/2312.10616">PointDifformer: Robust Point Cloud Registration with Neural Diffusion and Transformer </a> <br>
-        <em>IEEE Transactions on Geoscience and Remote Sensing (TGRS), 2024</em> <br>
-        Rui She, Qiyu Kang, <strong>Sijie Wang</strong>, Wee Peng Tay, Kai Zhao, Yang Song, Tianyu Geng, Yi Xu, Diego Navarro Navarro, Andreas Hartmannsgruber <br>
-    </li>
-    <li class="publication">
-        <a href="http://arxiv.org/abs/2312.10616">DistilVPR: Cross-Modal Knowledge Distillation for Visual Place Recognition</a> <br>
-        <em>AAAI Conference on Artificial Intelligence (AAAI), 2024</em> <br>
-        <strong>Sijie Wang</strong>, Rui She, Qiyu Kang, Xingchao Jian, Kai Zhao, Yang Song, Wee Peng Tay <br>
-    </li>
-    <li class="publication">
-        <a href="https://arxiv.org/abs/2401.03167">PosDiffNet: Positional Neural Diffusion for Point Cloud Registration in a Large Field of View with Perturbations</a> <br>
-        <em>AAAI Conference on Artificial Intelligence (AAAI), 2024</em> <br>
-        Rui She, <strong>Sijie Wang</strong>, Qiyu Kang, Kai Zhao, Yang Song, Wee Peng Tay, Tianyu Geng, Xingchao Jian <br>
-    </li>
-    <li class="publication">
-        <a href="https://ieeexplore.ieee.org/abstract/document/10268340/">RobustMat: Neural Diffusion for Street Landmark Patch Matching under Challenging Environments</a> <br>
-        <em>IEEE Transactions on Image Processing (TIP), 2023</em> <br>
-        Rui She, Qiyu Kang, <strong>Sijie Wang</strong>, Yuán-Ruì Yáng, Kai Zhao, Yang Song, Wee Peng Tay <br>
-    </li>
-    <li class="publication">
-        <a href="https://ieeexplore.ieee.org/abstract/document/10223130/">Robust Graph Neural Diffusion for Image Matching</a> <br>
-        <em>IEEE International Conference on Image Processing (ICIP), 2023</em> <br>
-        Rui She, Qiyu Kang, <strong>Sijie Wang</strong>, Kai Zhao, Yang Song, Yi Xu, Tianyu Geng, Wee Peng Tay, Diego Navarro Navarro, Andreas Hartmannsgruber <br>
-    </li>
-    <li class="publication">
-        <a href="https://arxiv.org/abs/2304.00932">HypLiLoc: Towards Effective LiDAR Pose Regression with Hyperbolic Fusion</a> <br>
-        <em>IEEE/CVF Computer Vision and Pattern Recognition (CVPR), 2023</em> <br>
-        <strong>Sijie Wang</strong>, Qiyu Kang, Rui She, Wei Wang, Kai Zhao, Yang Song, Wee Peng Tay <br>
-    </li>
-    <li class="publication">
-        <a href="https://arxiv.org/abs/2211.11238">RobustLoc: Robust Camera Pose Regression in Challenging Driving Environments</a> <br>
-        <em>AAAI Conference on Artificial Intelligence (AAAI), 2023</em> <br>
-        <strong>Sijie Wang</strong>, Qiyu Kang, Rui She, Wee Peng Tay, Andreas Hartmannsgruber, Diego Navarro Navarro <br>
-    </li>
-    <li class="publication">
-        <a href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/29a0ea49a103a233b17c0705cdeccb66-Abstract-Conference.html">On the Robustness of Graph Neural Diffusion to Topology Perturbations</a> <br>
-        <em>Advances in Neural Information Processing Systems (NeurIPS), 2022</em> <br>
-        Yang Song, Qiyu Kang, <strong>Sijie Wang</strong>, Kai Zhao, Wee Peng Tay <br>
-    </li>
-    <li class="publication">
-        <a href="https://arxiv.org/abs/2205.05912">Building Facade Parsing R-CNN</a> <br>
-        <em>arXiv preprint arXiv:2205.05912</em> <br>
-        <strong>Sijie Wang</strong>, Qiyu Kang, Rui She, Wee Peng Tay, Diego Navarro Navarro, Andreas Hartmannsgruber <br>
-    </li>
-</ul>
+      </div>
+    </div>
+  </div>
+</div>
 <hr>
 
 
 
-<h2>Others</h2>
-Conference Reviewer: NeurIPS, ICLR, CVPR, ICCV <br>
-Journal Reviewer: OJVT, TIV, Pattern Recognition, TGRS, RAL, IOTJ
+<h2>Selected Works</h2>
+<div class="filters">
+  <span class="filter-btn active" data-filter="all">Selected</span>
+  <span class="filter-btn" data-filter="llm">LLM</span>
+  <span class="filter-btn" data-filter="localizaiton">Localization/Matching/Retrieval</span>
+  <span class="filter-btn" data-filter="reconstruction">3D Reconstruction/NVS</span>
+  <span class="filter-btn" data-filter="semantic">Semantic</span>
+</div>
 
-<p><script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=tt&d=_ifXBlpDX78eU4bG-6YqyrLF59InX91nox3DQeePl6w'></script></p>
+<div id="publications">
+<div class="publication tag llm">
+  <div class="flex-row">
+    <img src="./assets/demo_bridge.png" alt="Demo image" style="width: 200px; height: auto; border-radius: 8px;">
+    <div>
+      <a href="https://arxiv.org/pdf/2505.12236">Bridging Generative and Discriminative Learning: Few-Shot Relation Extraction via Two-Stage Knowledge-Guided Pre-training</a><br>
+      <em style="color: #c00;">IJCAI, 2025</em><br>
+      Quanjiang Guo, Jinchuan Zhang, <strong>Sijie Wang</strong>, Ling Tian, Zhao Kang, Bin Yan, Weidong Xiao
+    </div>
+  </div>
+</div>
+
+<div class="publication tag localizaiton">
+  <div class="flex-row">
+    <img src="./assets/demo_agplace.png" alt="Demo image" style="width: 200px; height: auto; border-radius: 8px;">
+    <div>
+      <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Wang_Multi-Modal_Aerial-Ground_Cross-View_Place_Recognition_with_Neural_ODEs_CVPR_2025_paper.pdf">Multi-Modal Aerial-Ground Cross-View Place Recognition with Neural ODEs</a><br>
+      <em style="color: #c00;">CVPR, 2025</em><br>
+      <strong>Sijie Wang</strong>, Rui She, Qiyu Kang, Siqi Li, Disheng Li, Tianyu Geng, Shangshu Yu, Wee Peng Tay
+    </div>
+  </div>
+</div>
+
+<div class="publication tag reconstruction">
+  <div class="flex-row">
+    <img src="./assets/demo_stgc_nerf.png" alt="Demo image" style="width: 200px; height: auto; border-radius: 8px;">
+    <div>
+      <a href="https://ojs.aaai.org/index.php/AAAI/article/view/33045">STGC-NeRF: Spatial-Temporal Geometric Consistency for LiDAR Neural Radiance Fields in Dynamic Scenes</a><br>
+      <em style="color: #c00;">AAAI, 2025</em><br>
+      Shangshu Yu, Xiaotian Sun, Wen Li, Qingshan Xu, Zhimin Yuan, <strong>Sijie Wang</strong>, Rui She, Cheng Wang
+    </div>
+  </div>
+</div>
+
+<div class="publication tag llm">
+  <div class="flex-row">
+    <img src="./assets/demo_baner.png" alt="Demo image" style="width: 200px; height: auto; border-radius: 8px;">
+    <div>
+      <a href="https://arxiv.org/pdf/2412.02228">BANER: Boundary-Aware LLMs for Few-Shot Named Entity Recognition</a><br>
+      <em style="color: #c00;">International Conference on Computational Linguistics (COLING), 2025</em><br>
+      Quanjiang Guo, Yihong Dong, Ling Tian, Zhao Kang, Yu Zhang, <strong>Sijie Wang</strong>
+    </div>
+  </div>
+</div>
+
+<div class="publication tag localizaiton">
+  <div class="flex-row">
+    <img src="./assets/demo_prfusion.png" alt="Demo image" style="width: 200px; height: auto; border-radius: 8px;">
+    <div>
+      <a href="https://arxiv.org/pdf/2410.04939">PRFusion: Toward Effective and Robust Multi-Modal Place Recognition With Image and Point Cloud Fusion</a><br>
+      <em style="color: #c00;">IEEE TITS, 2024</em><br>
+      <strong>Sijie Wang</strong>, Qiyu Kang, Rui She, Kai Zhao, Yang Song, Wee Peng Tay
+    </div>
+  </div>
+</div>
+
+<div class="publication tag localizaiton">
+  <div class="flex-row">
+    <img src="./assets/demo_pointdifformer.png" alt="Demo image" style="width: 200px; height: auto; border-radius: 8px;">
+    <div>
+      <a href="http://arxiv.org/abs/2312.10616">PointDifformer: Robust Point Cloud Registration with Neural Diffusion and Transformer</a><br>
+      <em style="color: #c00;">IEEE TGRS, 2024</em><br>
+      Rui She, Qiyu Kang, <strong>Sijie Wang</strong>, Wee Peng Tay, Kai Zhao, Yang Song, Tianyu Geng, Yi Xu, Diego Navarro Navarro, Andreas Hartmannsgruber
+    </div>
+  </div>
+</div>
+
+<div class="publication tag localizaiton">
+  <div class="flex-row">
+    <img src="./assets/demo_distilvpr.png" alt="Demo image" style="width: 200px; height: auto; border-radius: 8px;">
+    <div>
+      <a href="http://arxiv.org/abs/2312.10616">DistilVPR: Cross-Modal Knowledge Distillation for Visual Place Recognition</a><br>
+      <em style="color: #c00;">AAAI, 2024</em><br>
+      <strong>Sijie Wang</strong>, Rui She, Qiyu Kang, Xingchao Jian, Kai Zhao, Yang Song, Wee Peng Tay
+    </div>
+  </div>
+</div>
+
+<div class="publication tag localizaiton">
+  <div class="flex-row">
+    <img src="./assets/demo_posdiffnet.png" alt="Demo image" style="width: 200px; height: auto; border-radius: 8px;">
+    <div>
+      <a href="https://arxiv.org/abs/2401.03167">PosDiffNet: Positional Neural Diffusion for Point Cloud Registration in a Large Field of View with Perturbations</a><br>
+      <em style="color: #c00;">AAAI, 2024</em><br>
+      Rui She, <strong>Sijie Wang</strong>, Qiyu Kang, Kai Zhao, Yang Song, Wee Peng Tay, Tianyu Geng, Xingchao Jian
+    </div>
+  </div>
+</div>
+
+<div class="publication tag localizaiton">
+  <div class="flex-row">
+    <img src="./assets/demo_robustmat.png" alt="Demo image" style="width: 200px; height: auto; border-radius: 8px;">
+    <div>
+      <a href="https://ieeexplore.ieee.org/abstract/document/10268340/">RobustMat: Neural Diffusion for Street Landmark Patch Matching under Challenging Environments</a><br>
+      <em style="color: #c00;">IEEE TIP, 2023</em><br>
+      Rui She, Qiyu Kang, <strong>Sijie Wang</strong>, Yuán-Ruì Yáng, Kai Zhao, Yang Song, Wee Peng Tay
+    </div>
+  </div>
+</div>
+
+<div class="publication tag localizaiton">
+  <div class="flex-row">
+    <img src="./assets/demo_icip.png" alt="Demo image" style="width: 200px; height: auto; border-radius: 8px;">
+    <div>
+      <a href="https://ieeexplore.ieee.org/abstract/document/10223130/">Robust Graph Neural Diffusion for Image Matching</a><br>
+      <em style="color: #c00;">IEEE ICIP, 2023</em><br>
+      Rui She, Qiyu Kang, <strong>Sijie Wang</strong>, Kai Zhao, Yang Song, Yi Xu, Tianyu Geng, Wee Peng Tay, Diego Navarro Navarro, Andreas Hartmannsgruber
+    </div>
+  </div>
+</div>
+
+<div class="publication tag localizaiton">
+  <div class="flex-row">
+    <img src="./assets/demo_hypliloc.png" alt="Demo image" style="width: 200px; height: auto; border-radius: 8px;">
+    <div>
+      <a href="https://arxiv.org/abs/2304.00932">HypLiLoc: Towards Effective LiDAR Pose Regression with Hyperbolic Fusion</a><br>
+      <em style="color: #c00;">CVPR, 2023</em><br>
+      <strong>Sijie Wang</strong>, Qiyu Kang, Rui She, Wei Wang, Kai Zhao, Yang Song, Wee Peng Tay
+    </div>
+  </div>
+</div>
+
+<div class="publication tag localizaiton">
+  <div class="flex-row">
+    <img src="./assets/demo_robustloc.png" alt="Demo image" style="width: 200px; height: auto; border-radius: 8px;">
+    <div>
+      <a href="https://arxiv.org/abs/2211.11238">RobustLoc: Robust Camera Pose Regression in Challenging Driving Environments</a><br>
+      <em style="color: #c00;">AAAI, 2023</em><br>
+      <strong>Sijie Wang</strong>, Qiyu Kang, Rui She, Wee Peng Tay, Andreas Hartmannsgruber, Diego Navarro Navarro
+    </div>
+  </div>
+</div>
+
+<div class="publication tag">
+  <div class="flex-row">
+    <img src="./assets/demo_nips2022.png" alt="Demo image" style="width: 200px; height: auto; border-radius: 8px;">
+    <div>
+      <a href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/29a0ea49a103a233b17c0705cdeccb66-Abstract-Conference.html">On the Robustness of Graph Neural Diffusion to Topology Perturbations</a><br>
+      <em style="color: #c00;">NeurIPS, 2022</em><br>
+      Yang Song, Qiyu Kang, <strong>Sijie Wang</strong>, Kai Zhao, Wee Peng Tay
+    </div>
+  </div>
+</div>
+
+<div class="publication tag semantic">
+  <div class="flex-row">
+    <img src="./assets/demo_facade.png" alt="Demo image" style="width: 200px; height: auto; border-radius: 8px;">
+    <div>
+      <a href="https://arxiv.org/abs/2205.05912">Building Facade Parsing R-CNN</a><br>
+      <em style="color: #c00;">arXiv preprint, 2022</em><br>
+      <strong>Sijie Wang</strong>, Qiyu Kang, Rui She, Wee Peng Tay, Diego Navarro Navarro, Andreas Hartmannsgruber
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+
+
+<script>
+  const buttons = document.querySelectorAll('.filter-btn');
+  const publications = document.querySelectorAll('.publication');
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      buttons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const filter = btn.dataset.filter;
+      publications.forEach(pub => {
+        if (filter === 'all' || pub.classList.contains(filter)) {
+          pub.style.display = 'block';
+        } else {
+          pub.style.display = 'none';
+        }
+      });
+    });
+  });
+  document.addEventListener('DOMContentLoaded', () => {
+    const firstBtn = document.querySelector('.filter-btn');
+    if (firstBtn) {
+      firstBtn.click();
+    }
+  });
+</script>
+
 
 </body>
 </html>
