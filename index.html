@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sijie Wang's Publications</title>
+<style>
+body { font-family: sans-serif; max-width: 900px; margin: 2em auto; }
+.filters { margin-bottom: 1em; }
+.filter-btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin: 4px;
+  border: 1px solid #c00;
+  border-radius: 6px;
+  color: #c00;
+  background: #fff;
+  cursor: pointer;
+}
+.filter-btn.active {
+  background-color: #c00;
+  color: white;
+}
+.publication {
+  padding: 1.2em 0; /* 上下内边距 */
+  border-bottom: 0.5px solid #dddbdb; /* 下边框 */
+}
+.publication:last-of-type {
+  border-bottom: none;
+}
+.tag { display: none; }
+.profile-image {
+    width: 150px; /* Adjust the width as needed */
+    height: auto;
+    margin-right: 25px; /* Add some space between the image and text */
+}
+hr {
+  margin-top: 1em;  /* 控制横线与上方内容的距离 */
+  margin-bottom: 1em;  /* 可选：控制与下方内容的间距 */
+}
+.flex-row {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+</style>
+</head>
+<body>
+
+
+
+
+<img src="https://github.com/sijieaaa/sijieaaa.github.io/raw/main/assets/black.jpg" alt="Sijie WANG" class="profile-image">
+</br>
+    
+<div class="intro">
+<h2>Sijie WANG</h2>
+<p>Sijie received the Ph.D. degree from NTU, Singapore in 2025. He received his B.Eng. degree (with hornors) from Harbin Institute of Technology, China in 2020, and M.Sc. degree from NTU, Singapore in 2021, respectively. 
+    He is currently a research fellow at the School of Electrical and Electronic Engineering, supervised by <a href="https://www3.ntu.edu.sg/home/wptay/index.html">Prof. Tay Wee Peng</a>. 
+    His research interests are mainly in computer vision and LLMs.</p>
+<p>wang1679 {at} e {dot} ntu {dot} edu {dot} sg</p>
+<p><a href="https://scholar.google.com/citations?user=IUfQMOYAAAAJ&hl=en" class="link-spacing">Google Scholar</a> <a href="https://github.com/sijieaaa">Github</a> </p>
+</div>
+<hr>
+
+
+
+
+
+<style>
+.limited-lines {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 7; /* Chrome, Safari */
+  line-clamp: 7; /* Standard (currently not widely supported) */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+</style>
+
+
+
+<h2>News</h2>
+<p class="limited-lines"> 
+[2026-01] One Federated Learning paper accepted by TPAMI. <br>
+[2025-11] One Event Extraction/AI Coding paper accepted by AAAI 2026 as Oral ✨✨✨. <br>
+[2025-09] One VLM/Localization paper accepted by NeurIPS 2025. <br>
+[2025-08] One LLM/Code Generation paper released. <br>
+[2025-07] Win Chinese Government Award for Outstanding Self-financed Students Abroad. <br>
+[2025-06] One Multi-modal UAV dataset paper accepted by ICCV 2025. <br>
+[2025-04] One LLM/Relation Extraction paper accepted by IJCAI 2025. <br>
+[2025-02] One Place Recognition paper accepted by CVPR 2025. <br>
+[2024-12] One LiDAR NeRF paper accepted by AAAI. <br>
+[2024-11] One LLM/NER paper accepted by Coling. <br>
+[2024-09] One paper accepted by TITS. <br>
+[2024-01] One paper accepted by Information Sciences. <br>
+[2024-01] One paper accepted by TGRS. <br>
+[2023-12] Three papers accepted by AAAI. <br>
+[2023-09] One paper accepted by NeurIPS as Spotlight ✨✨✨. <br>
+[2023-09] One paper accepted by TIP. <br>
+[2023-06] One paper accepted by ICIP. <br>
+[2023-05] One paper accepted by TIP. <br>
+[2023-05] Two papers accepted by ICML and IJCAI respectively. <br>
+</p>
+<hr>
+
+
+
+<h2>Selected Projects</h2>
+<div id="publications">
+  <div >
+    <div style="display: flex; gap: 16px; align-items: flex-start;">
+      <img src="./assets/demo_opencoderunner.png" alt="Demo image" style="width: 250px; height: auto; border-radius: 8px;">
+      <div>
+        <a href="https://github.com/sijieaaa/OpenCodeRunner">OpenCodeRunner: Safely and Remotely Running Multi-Language Multi-File Code</a> <br>
+        <em> Open-Source Project </em> <br>
+        <strong>Sijie Wang (Project Leader)</strong> <br>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+
+
+
+<h2>Selected Works</h2>
+
+#The full list can be found on <a href="https://scholar.google.com/citations?user=IUfQMOYAAAAJ&hl=en">Google Scholar</a> page.
+
+<div class="filters">
+  <span class="filter-btn active" data-filter="all">Selected</span>
+  <span class="filter-btn" data-filter="llm">VLM/LLM</span>
+  <span class="filter-btn" data-filter="retrieval">Multi-Modal Retrieval</span>
+  <span class="filter-btn" data-filter="localization">Localization/Matching</span>
+  <span class="filter-btn" data-filter="reconstruction">3D Reconstruction/NVS </span>
+  <span class="filter-btn" data-filter="semantic">Semantic</span>
+</div>
+
+<div id="publications">
+
+  
+<div class="publication tag llm ">
+<div class="flex-row">
+<img src="./assets/demo_aec.png" alt="Demo image" style="width: 250px; height: auto; border-radius: 8px;">
+<div>
+<a>Extracting Events Like Code: A Multi-Agent Programming Framework for Zero-Shot Event Extraction </a><br>
+<em style="color: #c00;">AAAI, 2026, Oral ✨✨✨</em><br>
+Quanjiang Guo, <strong>Sijie Wang</strong>, Jinchuan Zhang, Ben Zhang, zhao kang, Ling Tian, Ke Yan   <br>
+</div>
+</div>
+</div>
+
+
+<div class="publication tag llm localization">
+<div class="flex-row">
+<img src="./assets/demo_gtrloc.png" alt="Demo image" style="width: 250px; height: auto; border-radius: 8px;">
+<div>
+<a>GTR-Loc: Geospatial Text Regularization Assisted Outdoor LiDAR Localization </a><br>
+<em style="color: #c00;">NeurIPS, 2025</em><br>
+Shangshu Yu, Wen Li, Xiaotian Sun, Zhimin Yuan, Xin Wang, <strong>Sijie Wang</strong>, Rui She, Cheng Wang  <br>
+</div>
+</div>
+</div>
+
+
+<div class="publication tag llm">
+<div class="flex-row">
+<img src="./assets/demo_codeboost.png" alt="Demo image" style="width: 250px; height: auto; border-radius: 8px;">
+<div>
+<a href="http://arxiv.org/abs/2508.05242">CodeBoost: Boosting Code LLMs by Squeezing Knowledge from Code Snippets with RL </a><br>
+<em style="color: #c00;">arXiv, 2025</em><br>
+<strong>Sijie Wang</strong>, Quanjiang Guo, Kai Zhao, Yawei Zhang, Xin Li, Xiang Li, Siqi Li, Rui She, Shangshu Yu, Wee Peng Tay <br>
+<a href="https://github.com/sijieaaa/CodeBoost">[repo]</a> &nbsp
+</div>
+</div>
+</div>
+
+<div class="publication tag reconstruction semantic">
+<div class="flex-row">
+<img src="./assets/demo_uavscenes.png" alt="Demo image" style="width: 250px; height: auto; border-radius: 8px;">
+<div>
+<a href="https://arxiv.org/abs/2507.22412">UAVScenes: A Multi-Modal Dataset for UAVs</a><br>
+<em style="color: #c00;">ICCV, 2025</em><br>
+<strong>Sijie Wang</strong>, Siqi Li, Yawei Zhang, Shangshu Yu, Shenghai Yuan, Rui She, et. al., Lihua Xie, Wee Peng Tay <br>
+<a href="https://github.com/sijieaaa/UAVScenes">[repo]</a> &nbsp
+</div>
+</div>
+</div>
+
+<div id="publications">
+<div class="publication tag llm">
+  <div class="flex-row">
+    <img src="./assets/demo_bridge.png" alt="Demo image" style="width: 250px; height: auto; border-radius: 8px;">
+    <div>
+      <a href="https://arxiv.org/pdf/2505.12236">Bridging Generative and Discriminative Learning: Few-Shot Relation Extraction via Two-Stage Knowledge-Guided Pre-training</a><br>
+      <em style="color: #c00;">IJCAI, 2025</em><br>
+      Quanjiang Guo, Jinchuan Zhang, <strong>Sijie Wang</strong>, Ling Tian, Zhao Kang, Bin Yan, Weidong Xiao
+    </div>
+  </div>
+</div>
+
+<div class="publication tag retrieval">
+  <div class="flex-row">
+    <img src="./assets/demo_agplace.png" alt="Demo image" style="width: 250px; height: auto; border-radius: 8px;">
+    <div>
+      <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Wang_Multi-Modal_Aerial-Ground_Cross-View_Place_Recognition_with_Neural_ODEs_CVPR_2025_paper.pdf">Multi-Modal Aerial-Ground Cross-View Place Recognition with Neural ODEs</a><br>
+      <em style="color: #c00;">CVPR, 2025</em><br>
+      <strong>Sijie Wang</strong>, Rui She, Qiyu Kang, Siqi Li, Disheng Li, Tianyu Geng, Shangshu Yu, Wee Peng Tay
+    </div>
+  </div>
+</div>
+
+<div class="publication tag reconstruction">
+  <div class="flex-row">
+    <img src="./assets/demo_stgc_nerf.png" alt="Demo image" style="width: 250px; height: auto; border-radius: 8px;">
+    <div>
+      <a href="https://ojs.aaai.org/index.php/AAAI/article/view/33045">STGC-NeRF: Spatial-Temporal Geometric Consistency for LiDAR Neural Radiance Fields in Dynamic Scenes</a><br>
+      <em style="color: #c00;">AAAI, 2025</em><br>
+      Shangshu Yu, Xiaotian Sun, Wen Li, Qingshan Xu, Zhimin Yuan, <strong>Sijie Wang</strong>, Rui She, Cheng Wang
+    </div>
+  </div>
+</div>
+
+<div class="publication tag llm">
+  <div class="flex-row">
+    <img src="./assets/demo_baner.png" alt="Demo image" style="width: 250px; height: auto; border-radius: 8px;">
+    <div>
+      <a href="https://arxiv.org/pdf/2412.02228">BANER: Boundary-Aware LLMs for Few-Shot Named Entity Recognition</a><br>
+      <em style="color: #c00;">International Conference on Computational Linguistics (COLING), 2025</em><br>
+      Quanjiang Guo, Yihong Dong, Ling Tian, Zhao Kang, Yu Zhang, <strong>Sijie Wang</strong>
+    </div>
+  </div>
+</div>
+
+<div class="publication tag retrieval">
+  <div class="flex-row">
+    <img src="./assets/demo_prfusion.png" alt="Demo image" style="width: 250px; height: auto; border-radius: 8px;">
+    <div>
+      <a href="https://arxiv.org/pdf/2410.04939">PRFusion: Toward Effective and Robust Multi-Modal Place Recognition With Image and Point Cloud Fusion</a><br>
+      <em style="color: #c00;">IEEE TITS, 2024</em><br>
+      <strong>Sijie Wang</strong>, Qiyu Kang, Rui She, Kai Zhao, Yang Song, Wee Peng Tay
+    </div>
+  </div>
+</div>
+
+<div class="publication tag localization">
+  <div class="flex-row">
+    <img src="./assets/demo_pointdifformer.png" alt="Demo image" style="width: 250px; height: auto; border-radius: 8px;">
+    <div>
+      <a href="http://arxiv.org/abs/2312.10616">PointDifformer: Robust Point Cloud Registration with Neural Diffusion and Transformer</a><br>
+      <em style="color: #c00;">IEEE TGRS, 2024</em><br>
+      Rui She, Qiyu Kang, <strong>Sijie Wang</strong>, Wee Peng Tay, Kai Zhao, Yang Song, Tianyu Geng, Yi Xu, Diego Navarro Navarro, Andreas Hartmannsgruber
+    </div>
+  </div>
+</div>
+
+<div class="publication tag retrieval">
+  <div class="flex-row">
+    <img src="./assets/demo_distilvpr.png" alt="Demo image" style="width: 250px; height: auto; border-radius: 8px;">
+    <div>
+      <a href="http://arxiv.org/abs/2312.10616">DistilVPR: Cross-Modal Knowledge Distillation for Visual Place Recognition</a><br>
+      <em style="color: #c00;">AAAI, 2024</em><br>
+      <strong>Sijie Wang</strong>, Rui She, Qiyu Kang, Xingchao Jian, Kai Zhao, Yang Song, Wee Peng Tay
+    </div>
+  </div>
+</div>
+
+<div class="publication tag localization">
+  <div class="flex-row">
+    <img src="./assets/demo_posdiffnet.png" alt="Demo image" style="width: 250px; height: auto; border-radius: 8px;">
+    <div>
+      <a href="https://arxiv.org/abs/2401.03167">PosDiffNet: Positional Neural Diffusion for Point Cloud Registration in a Large Field of View with Perturbations</a><br>
+      <em style="color: #c00;">AAAI, 2024</em><br>
+      Rui She, <strong>Sijie Wang</strong>, Qiyu Kang, Kai Zhao, Yang Song, Wee Peng Tay, Tianyu Geng, Xingchao Jian
+    </div>
+  </div>
+</div>
+
+<div class="publication tag localization">
+  <div class="flex-row">
+    <img src="./assets/demo_robustmat.png" alt="Demo image" style="width: 250px; height: auto; border-radius: 8px;">
+    <div>
+      <a href="https://ieeexplore.ieee.org/abstract/document/10268340/">RobustMat: Neural Diffusion for Street Landmark Patch Matching under Challenging Environments</a><br>
+      <em style="color: #c00;">IEEE TIP, 2023</em><br>
+      Rui She, Qiyu Kang, <strong>Sijie Wang</strong>, Yuán-Ruì Yáng, Kai Zhao, Yang Song, Wee Peng Tay
+    </div>
+  </div>
+</div>
+
+<div class="publication tag localization">
+  <div class="flex-row">
+    <img src="./assets/demo_icip.png" alt="Demo image" style="width: 250px; height: auto; border-radius: 8px;">
+    <div>
+      <a href="https://ieeexplore.ieee.org/abstract/document/10223130/">Robust Graph Neural Diffusion for Image Matching</a><br>
+      <em style="color: #c00;">IEEE ICIP, 2023</em><br>
+      Rui She, Qiyu Kang, <strong>Sijie Wang</strong>, Kai Zhao, Yang Song, Yi Xu, Tianyu Geng, Wee Peng Tay, Diego Navarro Navarro, Andreas Hartmannsgruber
+    </div>
+  </div>
+</div>
+
+<div class="publication tag localization">
+  <div class="flex-row">
+    <img src="./assets/demo_hypliloc.png" alt="Demo image" style="width: 250px; height: auto; border-radius: 8px;">
+    <div>
+      <a href="https://arxiv.org/abs/2304.00932">HypLiLoc: Towards Effective LiDAR Pose Regression with Hyperbolic Fusion</a><br>
+      <em style="color: #c00;">CVPR, 2023</em><br>
+      <strong>Sijie Wang</strong>, Qiyu Kang, Rui She, Wei Wang, Kai Zhao, Yang Song, Wee Peng Tay
+    </div>
+  </div>
+</div>
+
+<div class="publication tag localization">
+  <div class="flex-row">
+    <img src="./assets/demo_robustloc.png" alt="Demo image" style="width: 250px; height: auto; border-radius: 8px;">
+    <div>
+      <a href="https://arxiv.org/abs/2211.11238">RobustLoc: Robust Camera Pose Regression in Challenging Driving Environments</a><br>
+      <em style="color: #c00;">AAAI, 2023</em><br>
+      <strong>Sijie Wang</strong>, Qiyu Kang, Rui She, Wee Peng Tay, Andreas Hartmannsgruber, Diego Navarro Navarro
+    </div>
+  </div>
+</div>
+
+<div class="publication tag">
+  <div class="flex-row">
+    <img src="./assets/demo_nips2022.png" alt="Demo image" style="width: 250px; height: auto; border-radius: 8px;">
+    <div>
+      <a href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/29a0ea49a103a233b17c0705cdeccb66-Abstract-Conference.html">On the Robustness of Graph Neural Diffusion to Topology Perturbations</a><br>
+      <em style="color: #c00;">NeurIPS, 2022</em><br>
+      Yang Song, Qiyu Kang, <strong>Sijie Wang</strong>, Kai Zhao, Wee Peng Tay
+    </div>
+  </div>
+</div>
+
+<div class="publication tag semantic">
+  <div class="flex-row">
+    <img src="./assets/demo_facade.png" alt="Demo image" style="width: 250px; height: auto; border-radius: 8px;">
+    <div>
+      <a href="https://arxiv.org/abs/2205.05912">Building Facade Parsing R-CNN</a><br>
+      <em style="color: #c00;">arXiv preprint, 2022</em><br>
+      <strong>Sijie Wang</strong>, Qiyu Kang, Rui She, Wee Peng Tay, Diego Navarro Navarro, Andreas Hartmannsgruber
+    </div>
+  </div>
+</div>
+
+</div>
+
+<hr>
+
+<h2>Services</h2>
+Conference Reviewer: NeurIPS, ICLR, CVPR, ICCV, AAAI <br>
+Journal Reviewer: OJVT, TIV, Pattern Recognition, TGRS, RAL, IOTJ, TIP
+
+
+<script>
+  const buttons = document.querySelectorAll('.filter-btn');
+  const publications = document.querySelectorAll('.publication');
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      buttons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const filter = btn.dataset.filter;
+      publications.forEach(pub => {
+        if (filter === 'all' || pub.classList.contains(filter)) {
+          pub.style.display = 'block';
+        } else {
+          pub.style.display = 'none';
+        }
+      });
+    });
+  });
+  document.addEventListener('DOMContentLoaded', () => {
+    const firstBtn = document.querySelector('.filter-btn');
+    if (firstBtn) {
+      firstBtn.click();
+    }
+  });
+</script>
+
+
+</body>
+</html>
+
+
+
+
+
